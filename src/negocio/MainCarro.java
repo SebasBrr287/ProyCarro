@@ -5,8 +5,7 @@ public class MainCarro {
         Carro c1 = new Carro();
         Carro c2 = new Carro();
         Carro c3 = new Carro();
-
-
+        /*
         c1.potencia = 2;
         c1.velocidad = 60;
         c2.potencia = 5;
@@ -39,6 +38,11 @@ public class MainCarro {
         System.out.println("La pontencia del carro es "+c3.potencia+" y la velocidad es "+c3.velocidad);
 
 
+         */
+    c1.setVelocidad(100);
+    c1.setPotencia(5);
+
+    System.out.println("La pontencia del carro es "+c1.getPotencia()+" y la velocidad es "+c1.getVelocidad());
 
     }
 }

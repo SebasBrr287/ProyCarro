@@ -7,6 +7,6 @@ void main() {
     Carro c1;
     c1 = new Carro(); //creando el objeto y asiganando c1
 
-    c1.potencia = 5;
+
 
 }

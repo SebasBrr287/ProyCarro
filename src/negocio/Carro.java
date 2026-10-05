@@ -12,6 +12,7 @@ public class Carro {
     parametro generalmente es del mismo tipo de atributo
  */
     public void setPotencia(int potencia) {
+        if (potencia > 0)
         this.potencia = potencia;
     }
 

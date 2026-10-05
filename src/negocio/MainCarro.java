@@ -44,5 +44,9 @@ public class MainCarro {
 
     System.out.println("La pontencia del carro es "+c1.getPotencia()+" y la velocidad es "+c1.getVelocidad());
 
+
+    c2.setVelocidad(100);
+    c2.setPotencia(5);
+
     }
 }

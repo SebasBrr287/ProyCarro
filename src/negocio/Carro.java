@@ -12,11 +12,15 @@ public class Carro {
     parametro generalmente es del mismo tipo de atributo
  */
     public void setPotencia(int potencia) {
+       // almacenar solo si el dato es correcto
         if (potencia > 0)
-        this.potencia = potencia;
+            this.potencia = potencia;
     }
 
     public void setVelocidad(double velocidad){
+        //actualizar si el dato es correcto sino setear el valor
+        if(velocidad < 0)
+            velocidad = 0;
         this.velocidad = velocidad;
     }
 

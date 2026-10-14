@@ -8,6 +8,10 @@ public class Carro {
 
     private static int numCarros = 0;
 
+    //constante de clase
+
+    private static final double IVA = 0.15;
+
     public Carro(int potencia, double velocidad){
 
         /*
@@ -67,6 +71,17 @@ public class Carro {
 
     public static int getNumCarros(){
         return numCarros;
+    }
+
+    public static double getIva(){
+        return IVA;
+    }
+
+    // si el resultado del metodo modifica un atributo el metodo es void, si el resultado del metodo no tengo donde almacenarlo retorno valor
+    // si lo que necesita el metodo esta en los atributos no recibo parametros, si necesito datos externos necesito que me digan de afuera los valores
+
+    public double calcularPrecio(double precio){
+        return precio + (precio * IVA);
     }
 
     public void acelerar(){

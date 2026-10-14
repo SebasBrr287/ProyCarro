@@ -4,6 +4,10 @@ public class Carro {
     private int potencia;
     private double velocidad;
 
+    //atributo de clase
+
+    private static int numCarros = 0;
+
     public Carro(int potencia, double velocidad){
 
         /*
@@ -15,10 +19,13 @@ public class Carro {
         //si los atributos tienen validaciones utlizo el set()
         setPotencia(potencia);
         setVelocidad(velocidad);
+        numCarros++;
     }
 
     public Carro() {
         // valores por asigancion 0 (this.potencia = 0), pero si piden se debe asignar un valor (this.potencia = 2)
+
+        numCarros++;
 
     }
 
@@ -56,6 +63,10 @@ public class Carro {
 
     public double getVelocidad() {
         return velocidad;
+    }
+
+    public static int getNumCarros(){
+        return numCarros;
     }
 
     public void acelerar(){

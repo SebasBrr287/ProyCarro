@@ -4,12 +4,14 @@ public class MainCarro {
     static void main() { //"psvm" y tab para crear el main automaticamente
 
         System.out.println("El numero de objetos de tipo Carro creados son: "+Carro.getNumCarros());
+        System.out.println("El iva de los vehiculos es: "+Carro.getIva());
 
         Carro c1 = new Carro(4  ,100);
         Carro c2 = new Carro(-5,-100);
         Carro c3 = new Carro();
 
         System.out.println("El numero de objetos de tipo Carro creados son: "+Carro.getNumCarros());
+        System.out.println("El precio de venta al publico del carro 1 es: "+c1.calcularPrecio(21599));
         /*
         c1.potencia = 2;
         c1.velocidad = 60;

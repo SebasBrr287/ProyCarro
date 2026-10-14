@@ -4,6 +4,24 @@ public class Carro {
     private int potencia;
     private double velocidad;
 
+    public Carro(int potencia, double velocidad){
+
+        /*
+        this.potencia = potencia;
+        this.velocidad = velocidad;
+
+         */
+
+        //si los atributos tienen validaciones utlizo el set()
+        setPotencia(potencia);
+        setVelocidad(velocidad);
+    }
+
+    public Carro() {
+        // valores por asigancion 0 (this.potencia = 0), pero si piden se debe asignar un valor (this.potencia = 2)
+
+    }
+
     /*
     Ingreso de informacion
     metodos set()
